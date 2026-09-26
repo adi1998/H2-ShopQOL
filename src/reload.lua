@@ -76,7 +76,7 @@ actionBar.Children[_PLUGIN.guid .. "SellEverythingButton"] =
         ControlHotkeys = { "Reroll", },
     },
     Text = "{RR} SELL EVERYTHING",
-    AltTexts = { "{RR} EXCHANGE EVERYTHING" },
+    AltTexts = { "{RR} RECYCLE EVERYTHING" },
     TextArgs = game.UIData.ContextualButtonFormatRight,
 }
 

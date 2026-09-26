@@ -30,11 +30,15 @@ modutil.mod.Path.Wrap("MarketScreenShowSellAllPrompt", function (base, screen)
 	end
     if not screen.ItemCategories[screen.ActiveCategoryIndex].FlipSides then
         if button.Data.Priority then
-            mod.OpenBuyAllMarketPromptScreen( screen, button )
-            if screen.DoSellAll then
-                mod.MarketScreenBuyAll( screen, button )
+            if game.HasResources( button.Data.Cost ) then
+                mod.OpenBuyAllMarketPromptScreen( screen, button )
+                if screen.DoSellAll then
+                    mod.MarketScreenBuyAll( screen, button )
+                end
+                screen.DoSellAll = nil
+            else
+                game.MarketPurchaseFailPresentation( screen, button )
             end
-            screen.DoSellAll = nil
         end
 	end
     return base(screen)
