@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "zerp"
 name = "ShopQOL"
-versionNumber = "1.0.0"
+versionNumber = "1.1.0"
 description = "Adds some QoL to buying and selling items from the shop."
 websiteUrl = "https://github.com/adi1998/H2-ShopQOL"
 containsNsfwContent = false
