@@ -4,6 +4,7 @@ Hades II mod offering some QoL features.
 
 - Adds a `Purchase All` button, works similarly to the Sell All button for fishes and kudos.
 - Adds a `Sell Everything` button to the fish and kudos menus which sells every type of fish and every item type that no longer has any use.
+- Adds an option to buy Kudos with Bones at the same effective rate of buying and selling Psyche.
 
 ## Installation
 

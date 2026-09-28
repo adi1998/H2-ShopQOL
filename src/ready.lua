@@ -43,3 +43,20 @@ modutil.mod.Path.Wrap("MarketScreenShowSellAllPrompt", function (base, screen)
 	end
     return base(screen)
 end)
+
+table.insert(game.ScreenData.MarketScreen.ItemCategories[1], 3, {
+    BuyName = "CosmeticsPoints", BuyAmount = 10,
+    Cost =
+    {
+        MetaCurrency = 20,
+    },
+    GameStateRequirements =
+    {
+        {
+            Path = { "GameState", "WorldUpgrades", },
+            HasAll = { "WorldUpgradeExchangeShop", },
+        },
+    },
+    Priority = true,
+    PurchaseSound = "/Leftovers/World Sounds/Caravan Interior/MushroomLogInteract",
+})
